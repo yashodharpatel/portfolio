@@ -1,0 +1,44 @@
+---
+const personalImageAlt = "Yashodhar Patel";
+---
+
+<article
+  class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row"
+>
+  <div
+    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1 text-justify"
+  >
+    <p>
+      My name is <strong>Yashodhar Patel,</strong> and my journey into programming
+      began with a simple curiosity that has since grown into a deep passion. Currently,
+      I’m pursuing a <strong>Bachelor’s in Computer Science Engineering</strong>
+      with a <strong>CGPA of 9.35</strong>
+      at the University of Mumbai.
+    </p>
+    <p>
+      I’ve gained valuable industry experience as a <strong
+        >Software Developer at Drona Pay,</strong
+      > where I worked on real-time fraud protection systems. Additionally, I’ve
+      contributed as a <strong>Maintainer at TCET Open Source.</strong> I’m also
+      an <strong>active participant in hackathons</strong> and coding competitions,
+      always looking for new ways to challenge myself and grow.
+    </p>
+    <p>
+      One of my ongoing projects is developing <strong
+        >AuthEase, a Node.js SDK</strong
+      > designed to simplify authentication for developers. I’ve solved over <strong
+        >250+ Data Structure and Algorithm problems,</strong
+      > which fuels my commitment to continuous learning and making a meaningful
+      impact in the tech industry.
+    </p>
+  </div>
+
+  <img
+    width="200"
+    height="200"
+    src="/me.jpeg"
+    alt={personalImageAlt}
+    class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
+    style="object-position: 50% 50%"
+  />
+</article>

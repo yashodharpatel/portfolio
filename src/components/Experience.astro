@@ -1,0 +1,47 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "January 2023 - December 2023",
+    title: "Software Developer",
+    company: "Drona Pay",
+    description: [
+      "Refactored and optimized a React codebase, reducing load times by 30%.",
+      "Implemented best practices to improve code quality, reducing maintenance effort by 20%.",
+      "Contributed to the development of Finos Perspective Dashboards, leveraging React to deliver data-driven visualizations.",
+      "Resolved 100+ bugs and issues to maintain dashboard stability.",
+    ],
+  },
+  {
+    date: "June 2023 - December 2023",
+    title: "Maintainer",
+    company: "TCET Open Source",
+    description: [
+      "Revamped the college website, resulting in significant improvement in user engagement and accessibility for diverse user base of 4000 students.",
+      "Enhanced UX with an intuitive design, reducing navigation time by 30%.",
+      "Leveraged React and Tailwind CSS to contribute to the Resume Screener Project.",
+    ],
+  },
+  {
+    date: "February 2022 - July 2022",
+    title: "React Development Intern",
+    company: "Drona Pay",
+    description: [
+      "Collaborated with design and product teams to align userinterface with design guidelines, resulting in a 20% increase in user satisfaction.",
+      "Developed and implemented behavioural fingerprints and keystroke dynamics, enhancing security by 15%.",
+      "Created a comprehensive Postman automation suite, reducing testing time by 30% and enhancing efficiency in API functionality validation during development cycles.",
+    ],
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
