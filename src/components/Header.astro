@@ -1,33 +1,6 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro";
-
-const navItems = [
-  {
-    title: "Experience",
-    label: "experience",
-    url: "/#experience",
-  },
-  {
-    title: "Projects",
-    label: "projects",
-    url: "/#projects",
-  },
-  {
-    title: "Skills",
-    label: "skills",
-    url: "/#skills",
-  },
-  {
-    title: "About Me",
-    label: "about-me",
-    url: "/#about-me",
-  },
-  // {
-  //   title: "Contact",
-  //   label: "contact",
-  //   url: "mailto:patelyashodhar012@gmail.com",
-  // },
-];
+import { NAVITEMS } from "./DATA";
 ---
 
 <header
@@ -37,7 +10,7 @@ const navItems = [
     class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center"
   >
     {
-      navItems.map((link) => (
+      NAVITEMS.map((link) => (
         <a
           class="relative block px-2 py-2 transition hover:text-yellow-500 dark:hover:text-yellow-400"
           aria-label={link.label}

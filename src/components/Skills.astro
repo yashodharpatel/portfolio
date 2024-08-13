@@ -1,62 +1,10 @@
 ---
-import TAGS from "./TAGS";
-
-const skillSet = [
-  {
-    name: "Programming Languages",
-    skills: [
-      TAGS.JAVASCRIPT,
-      TAGS.TYPESCRIPT,
-      TAGS.JAVA,
-      // TAGS.SQL,
-      TAGS.CPP,
-    ],
-  },
-  {
-    name: "Technical",
-    skills: [
-      TAGS.REACT,
-      TAGS.NEXT,
-      TAGS.NODE,
-      TAGS.EXPRESS,
-      TAGS.MONGODB,
-      TAGS.REDIS,
-      TAGS.FIREBASE,
-      TAGS.ASTRO,
-      TAGS.TAILWIND,
-      TAGS.BOOTSTRAP,
-    ],
-  },
-  {
-    name: "Tools",
-    skills: [
-      TAGS.GIT,
-      TAGS.POSTMAN,
-      TAGS.DOCKER,
-      TAGS.ROLLUP,
-      TAGS.GITHUB,
-      TAGS.GITLAB,
-      TAGS.VERCEL,
-      TAGS.MACOS,
-      TAGS.VSCODE,
-    ],
-  },
-  {
-    name: "Currently Learning",
-    skills: [
-      TAGS.SOLIDITY,
-      TAGS.DEVOPS,
-      TAGS.BLOCKCHAIN,
-      TAGS.SOLANA,
-      TAGS.KUBERNETES,
-    ],
-  },
-];
+import { SKILLSET } from "./DATA";
 ---
 
 <div class="flex flex-col gap-6">
   {
-    skillSet.map((skillSet) => (
+    SKILLSET.map((skillSet) => (
       <div class="p-4 flex flex-col justify-start items-center">
         <h3 class="text-xl font-bold text-gray-300">{skillSet.name}</h3>
         <ul class="flex flex-wrap mt-6 gap-8 items-center justify-center">
