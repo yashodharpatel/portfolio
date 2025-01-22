@@ -254,9 +254,20 @@ const NAVITEMS = [
 
 const EXPERIENCE = [
   {
+    date: "January 2025 - Present",
+    title: "Project Intern",
+    company: "Oracle",
+    type: "Internship",
+    description: [
+      "Working in a team that provides cloud infrastructure for internal Oracle projects, focusing on Oracle Cloud Infrastructure and Oracle APEX.",
+      "Automating cloud infrastructure processes using Python to improve efficiency and scalability.",
+    ],
+  },
+  {
     date: "January 2023 - December 2023",
-    title: "Software Developer",
+    title: "Software Development Intern",
     company: "Drona Pay",
+    type: "Part-time",
     description: [
       "Refactored and optimized a React codebase, reducing load times by 30%.",
       "Implemented best practices to improve code quality, reducing maintenance effort by 20%.",
@@ -268,6 +279,7 @@ const EXPERIENCE = [
     date: "June 2023 - December 2023",
     title: "Maintainer",
     company: "TCET Open Source",
+    type: "Part-time",
     description: [
       "Revamped the college website, resulting in significant improvement in user engagement and accessibility for diverse user base of 4000 students.",
       "Enhanced UX with an intuitive design, reducing navigation time by 30%.",
@@ -278,6 +290,7 @@ const EXPERIENCE = [
     date: "February 2022 - July 2022",
     title: "React Development Intern",
     company: "Drona Pay",
+    type: "Internship",
     description: [
       "Collaborated with design and product teams to align userinterface with design guidelines, resulting in a 20% increase in user satisfaction.",
       "Developed and implemented behavioural fingerprints and keystroke dynamics, enhancing security by 15%.",

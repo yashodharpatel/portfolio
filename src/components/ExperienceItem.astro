@@ -2,12 +2,13 @@
 interface Props {
   title: string;
   company: string;
-  description: string[];
+  type: string;
   link?: string;
   date: string;
+  description: string[];
 }
 
-const { title, company, description, date } = Astro.props;
+const { title, company, date, type, description } = Astro.props;
 ---
 
 <div
@@ -25,6 +26,9 @@ const { title, company, description, date } = Astro.props;
       <time class="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80"
         >{date}</time
       >
+      <div class="pt-1 m-0">
+        {type}
+      </div>
     </div>
   </div>
   <div
