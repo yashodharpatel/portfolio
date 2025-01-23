@@ -17,6 +17,9 @@ import Bootstrap from "./icons/technical/Bootstrap.astro";
 import Sass from "./icons/technical/Sass.astro";
 import Javascript from "./icons/technical/Javascript.astro";
 import Java from "./icons/technical/Java.astro";
+import Python from "./icons/technical/Python.astro";
+import OCI from "./icons/technical/OCI.astro";
+import Oracle from "./icons/technical/Oracle.astro";
 import SQL from "./icons/technical/SQL.astro";
 import CPP from "./icons/technical/CPP.astro";
 import WebRTC from "./icons/technical/WebRTC.astro";
@@ -94,6 +97,14 @@ const PROJECTTAGS = {
 };
 
 const SKILLS = {
+  JAVA: {
+    name: "Java",
+    icon: Java,
+  },
+  PYTHON: {
+    name: "Python",
+    icon: Python,
+  },
   JAVASCRIPT: {
     name: "Javascript",
     icon: Javascript,
@@ -101,10 +112,6 @@ const SKILLS = {
   TYPESCRIPT: {
     name: "Typescript",
     icon: Typescript,
-  },
-  JAVA: {
-    name: "Java",
-    icon: Java,
   },
   CPP: {
     name: "C++",
@@ -115,6 +122,10 @@ const SKILLS = {
     icon: SQL,
   },
 
+  OCI: {
+    name: "Oracle Cloud",
+    icon: OCI,
+  },
   REACT: {
     name: "React",
     icon: ReactJS,
@@ -173,9 +184,9 @@ const SKILLS = {
     name: "Docker",
     icon: Docker,
   },
-  ROLLUP: {
-    name: "Rollup",
-    icon: Rollup,
+  APEX: {
+    name: "APEX",
+    icon: Oracle,
   },
   GITHUB: {
     name: "GitHub",
@@ -184,6 +195,10 @@ const SKILLS = {
   GITLAB: {
     name: "Gitlab",
     icon: GitLab,
+  },
+  ROLLUP: {
+    name: "Rollup",
+    icon: Rollup,
   },
   VERCEL: {
     name: "Vercel",
@@ -260,7 +275,7 @@ const EXPERIENCE = [
     type: "Internship",
     description: [
       "Working in a team that provides cloud infrastructure for internal Oracle projects, focusing on Oracle Cloud Infrastructure and Oracle APEX.",
-      "Automating cloud infrastructure processes using Python to improve efficiency and scalability.",
+      "Automating cloud infrastructure processes, using Python to improve efficiency and scalability.",
     ],
   },
   {
@@ -281,7 +296,7 @@ const EXPERIENCE = [
     company: "TCET Open Source",
     type: "Part-time",
     description: [
-      "Revamped the college website, resulting in significant improvement in user engagement and accessibility for diverse user base of 4000 students.",
+      "Revamped the college website, resulting in significant improvement in user engagement and accessibility for a diverse user base of 4000 students.",
       "Enhanced UX with an intuitive design, reducing navigation time by 30%.",
       "Leveraged React and Tailwind CSS to contribute to the Resume Screener Project.",
     ],
@@ -292,8 +307,8 @@ const EXPERIENCE = [
     company: "Drona Pay",
     type: "Internship",
     description: [
-      "Collaborated with design and product teams to align userinterface with design guidelines, resulting in a 20% increase in user satisfaction.",
-      "Developed and implemented behavioural fingerprints and keystroke dynamics, enhancing security by 15%.",
+      "Collaborated with design and product teams to align user interface with design guidelines, resulting in a 20% increase in user satisfaction.",
+      "Developed and implemented behavioral fingerprints and keystroke dynamics, enhancing security by 15%.",
       "Created a comprehensive Postman automation suite, reducing testing time by 30% and enhancing efficiency in API functionality validation during development cycles.",
     ],
   },
@@ -304,7 +319,7 @@ const PROJECTS = [
     title: "Authease",
     subtitle: "Simplifying Authentication, Amplifying Development",
     description:
-      "Authease, currently in development, is an ambitious Node.js library that simplifies user authentication for frontend applications. It offers modular components, centralized configuration, and seamless integration with various frameworks, allowing developers to implement secure authentication features without extensive backend setup.",
+      "Authease, currently under development, is an ambitious Node.js library that simplifies user authentication for frontend applications. It offers modular components, centralized configuration, and seamless integration with various frameworks, allowing developers to implement secure authentication features without extensive backend setup.",
     detail:
       "https://docs.google.com/document/d/18-8rOahuLzFEiHm6i_c9V5fHqA4sYOuEFaQlb3JAqyY/edit?usp=sharing",
     github: "https://github.com/yashodharpatel/authease",
@@ -379,16 +394,18 @@ const SKILLSET = [
   {
     name: "Programming Languages",
     skills: [
+      SKILLS.JAVA,
+      SKILLS.PYTHON,
       SKILLS.JAVASCRIPT,
       SKILLS.TYPESCRIPT,
-      SKILLS.JAVA,
       SKILLS.CPP,
-      // SKILLS.SQL,
+      SKILLS.SQL,
     ],
   },
   {
     name: "Technical",
     skills: [
+      SKILLS.OCI,
       SKILLS.REACT,
       SKILLS.NEXT,
       SKILLS.NODE,
@@ -408,9 +425,10 @@ const SKILLSET = [
       SKILLS.GIT,
       SKILLS.POSTMAN,
       SKILLS.DOCKER,
-      SKILLS.ROLLUP,
+      SKILLS.APEX,
       SKILLS.GITHUB,
       SKILLS.GITLAB,
+      SKILLS.ROLLUP,
       SKILLS.VERCEL,
       SKILLS.MACOS,
       // SKILLS.VSCODE,
@@ -424,7 +442,7 @@ const SKILLSET = [
       SKILLS.SOLANA,
       SKILLS.DEVOPS,
       SKILLS.KUBERNETES,
-      SKILLS.WEBRTC,
+      // SKILLS.WEBRTC,
     ],
   },
 ];
