@@ -94,6 +94,22 @@ const PROJECTTAGS = {
     class: "bg-[#a6432c6e] text-white",
     icon: Rollup,
   },
+
+  SOLIDITY: {
+    name: "Solidity",
+  },
+  ETHEREUM: {
+    name: "Ethereum",
+  },
+  METAMASK: {
+    name: "MetaMask",
+  },
+  WEB3JS: {
+    name: "Web3.js",
+  },
+  THIRDWEB: {
+    name: "Thirdweb",
+  },
 };
 
 const SKILLS = {
@@ -315,6 +331,26 @@ const EXPERIENCE = [
 ];
 
 const PROJECTS = [
+  {
+    title: "FundForTrust",
+    subtitle: "Where Trust and Funding Meet",
+    description:
+      "FundForTrust, currently under development, is a blockchain-based crowdfunding platform designed to provide a safe, secure, and transparent way for creators and donors to engage in fundraising. By leveraging blockchain technology, it ensures donor guarantee, prevents data tampering, and enhances trust between creators and contributors. This platform aims to revolutionize crowdfunding by offering decentralized and immutable transaction records.",
+    detail:
+      "https://drive.google.com/file/d/1e8T6awd7yYmZnF4yR3y2y_l2oRKlJubJ/view?usp=sharing",
+    github: "",
+    link: "",
+    image: "/projects/fundfortrust.webp",
+    tags: [
+      PROJECTTAGS.SOLIDITY,
+      PROJECTTAGS.ETHEREUM,
+      PROJECTTAGS.METAMASK,
+      PROJECTTAGS.WEB3JS,
+      PROJECTTAGS.THIRDWEB,
+      PROJECTTAGS.REACT,
+      PROJECTTAGS.TAILWIND,
+    ],
+  },
   {
     title: "Authease",
     subtitle: "Simplifying Authentication, Amplifying Development",
