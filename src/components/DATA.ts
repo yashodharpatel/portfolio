@@ -20,6 +20,7 @@ import Java from "./icons/technical/Java.astro";
 import Python from "./icons/technical/Python.astro";
 import OCI from "./icons/technical/OCI.astro";
 import Oracle from "./icons/technical/Oracle.astro";
+import Shell from "./icons/technical/Shell.astro";
 import SQL from "./icons/technical/SQL.astro";
 import CPP from "./icons/technical/CPP.astro";
 import WebRTC from "./icons/technical/WebRTC.astro";
@@ -45,7 +46,7 @@ const PROJECTTAGS = {
     icon: ExpressJS,
   },
   TYPESCRIPT: {
-    name: "Typescript",
+    name: "TypeScript",
     class: "bg-[#3178c661] text-white",
     icon: Typescript,
   },
@@ -122,11 +123,11 @@ const SKILLS = {
     icon: Python,
   },
   JAVASCRIPT: {
-    name: "Javascript",
+    name: "JavaScript",
     icon: Javascript,
   },
   TYPESCRIPT: {
-    name: "Typescript",
+    name: "TypeScript",
     icon: Typescript,
   },
   CPP: {
@@ -158,6 +159,10 @@ const SKILLS = {
   EXPRESS: {
     name: "Express.js",
     icon: ExpressJS,
+  },
+  SHELL: {
+    name: "Shell",
+    icon: Shell,
   },
   MONGODB: {
     name: "MongoDB",
@@ -209,7 +214,7 @@ const SKILLS = {
     icon: GitHubColor,
   },
   GITLAB: {
-    name: "Gitlab",
+    name: "GitLab",
     icon: GitLab,
   },
   ROLLUP: {
@@ -242,7 +247,7 @@ const SKILLS = {
     icon: Blockchain,
   },
   DEVOPS: {
-    name: "Devops",
+    name: "DevOps",
     icon: Devops,
   },
   KUBERNETES: {
@@ -290,8 +295,8 @@ const EXPERIENCE = [
     company: "Oracle",
     type: "Internship",
     description: [
-      "Working in a team that provides cloud infrastructure for internal Oracle projects, focusing on Oracle Cloud Infrastructure and Oracle APEX.",
-      "Automating cloud infrastructure processes, using Python to improve efficiency and scalability.",
+      "Working in a team that provides cloud infrastructure for internal Oracle projects, focusing on Oracle Cloud Infrastructure (OCI) and Oracle APEX.",
+      "Automating cloud infrastructure processes, using Python and Shell Scripting to improve efficiency and scalability.",
     ],
   },
   {
@@ -303,7 +308,7 @@ const EXPERIENCE = [
       "Refactored and optimized a React codebase, reducing load times by 30%.",
       "Implemented best practices to improve code quality, reducing maintenance effort by 20%.",
       "Contributed to the development of Finos Perspective Dashboards, leveraging React to deliver data-driven visualizations.",
-      "Resolved 100+ bugs and issues to maintain dashboard stability.",
+      "Resolved 100+ bugs and issues, maintaining dashboard stability.",
     ],
   },
   {
@@ -335,7 +340,7 @@ const PROJECTS = [
     title: "FundForTrust",
     subtitle: "Where Trust and Funding Meet",
     description:
-      "FundForTrust, currently under development, is a blockchain-based crowdfunding platform designed to provide a safe, secure, and transparent way for creators and donors to engage in fundraising. By leveraging blockchain technology, it ensures donor guarantee, prevents data tampering, and enhances trust between creators and contributors. This platform aims to revolutionize crowdfunding by offering decentralized and immutable transaction records.",
+      "FundForTrust, currently in development, is a blockchain-based crowdfunding platform designed to provide a safe, secure, and transparent way for creators and donors to engage in fundraising. By leveraging blockchain technology, it ensures donor guarantee, prevents data tampering, and enhances trust between creators and contributors. This platform aims to revolutionize crowdfunding by offering decentralized and immutable transaction records.",
     detail:
       "https://drive.google.com/file/d/1e8T6awd7yYmZnF4yR3y2y_l2oRKlJubJ/view?usp=sharing",
     github: "",
@@ -355,7 +360,7 @@ const PROJECTS = [
     title: "Authease",
     subtitle: "Simplifying Authentication, Amplifying Development",
     description:
-      "Authease, currently under development, is an ambitious Node.js library that simplifies user authentication for frontend applications. It offers modular components, centralized configuration, and seamless integration with various frameworks, allowing developers to implement secure authentication features without extensive backend setup.",
+      "Authease, currently in development, is an open-source Node.js library that simplifies user authentication for frontend applications. It offers modular components, centralized configuration, and seamless integration with various frameworks, allowing developers to implement secure authentication features without extensive backend setup.",
     detail:
       "https://docs.google.com/document/d/18-8rOahuLzFEiHm6i_c9V5fHqA4sYOuEFaQlb3JAqyY/edit?usp=sharing",
     github: "https://github.com/yashodharpatel/authease",
@@ -376,7 +381,7 @@ const PROJECTS = [
     title: "Lingoleap",
     subtitle: "Elevate Your Language Journey",
     description:
-      "Lingo Leap is a web application offering interactive Hindi language therapy materials and learning exercises. It features structured Hindi content across beginner to advanced levels, gamified progression through XP and streaks, and supervisor oversight, providing an engaging platform for Hindi language therapy and learning.",
+      "Lingoleap is a web application offering interactive Hindi language therapy materials and learning exercises. It features structured Hindi content across beginner to advanced levels, gamified progression through XP and streaks, and supervisor oversight, providing an engaging platform for Hindi language therapy and learning.",
     detail:
       "https://docs.google.com/document/d/1K-LTq3XryjIPmVbhVND0o27JOETyU58s100DRQWR0LU/edit?usp=sharing",
     github: "https://github.com/yashodharpatel/Lingoleap",
@@ -446,6 +451,7 @@ const SKILLSET = [
       SKILLS.NEXT,
       SKILLS.NODE,
       SKILLS.EXPRESS,
+      SKILLS.SHELL,
       SKILLS.MONGODB,
       SKILLS.REDIS,
       SKILLS.FIREBASE,
@@ -458,10 +464,10 @@ const SKILLSET = [
   {
     name: "Tools",
     skills: [
-      SKILLS.GIT,
       SKILLS.POSTMAN,
       SKILLS.DOCKER,
       SKILLS.APEX,
+      SKILLS.GIT,
       SKILLS.GITHUB,
       SKILLS.GITLAB,
       SKILLS.ROLLUP,
